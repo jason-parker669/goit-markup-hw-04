@@ -78,7 +78,7 @@
   --color-border-light: #e7e9fc;
   --color-white-secondary: #f4f4fd;
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
-  --grey: rgba(46, 47, 66, 0.7);
+  --color-hero-background: rgba(46, 47, 66, 0.7);
   --color-white-primary: #fff;
   --dairy: #fcfcfc;
 }
@@ -244,6 +244,7 @@ footer .container {
 /* #endregion SECTION CONTAINERS*/
 
 /* #region SECTIONS STRUCTURE*/
+
 .header-style {
   border-bottom: 1px solid var(--color-border-light);
 }
@@ -386,3 +387,19 @@ footer .footer-logo {
 }
 
 /* #endregion SECTIONS STRUCTURE */
+
+/* #region THEME*/
+.hero {
+  background-color: var(--color-secondary);
+  background-image: linear-gradient(
+      to bottom,
+      var(--color-hero-background),
+      var(--color-hero-background)
+    ),
+    url(../images/people-office-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* #endregion THEME*/
