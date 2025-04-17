@@ -74,7 +74,7 @@
   --color-secondary: #2e2f42;
   --green: #31d0aa;
   --color-text-main: #434455;
-  --light-slate: #8e8f99;
+  --color-subtle-text: #8e8f99;
   --color-border-light: #e7e9fc;
   --color-white-secondary: #f4f4fd;
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
@@ -119,6 +119,10 @@
 .hero .hero-button:focus {
   color: inherit;
   background-color: var(--color-hover-dark);
+}
+
+.why-us .icon-container {
+  background-color: var(--color-white-secondary);
 }
 
 .team {
@@ -323,6 +327,20 @@ footer .container {
   width: calc((100% - 72px) / 4);
 }
 
+.why-us .icon-container {
+  height: 112px;
+  width: 264px;
+  padding: 24px 100px;
+  border-radius: 4px;
+  border: 1px solid var(--color-subtle-text);
+  margin-bottom: 8px;
+}
+
+.why-us .icon-size {
+  height: 64px;
+  width: 64px;
+}
+
 .section-heading {
   text-align: center;
 }
@@ -338,6 +356,20 @@ footer .container {
 .team .team-members {
   display: flex;
   gap: 24px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.team .icon-size {
+  width: 40px;
+  height: 40px;
 }
 
 .team-members .box {
