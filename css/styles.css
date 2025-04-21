@@ -288,7 +288,7 @@ a {
   padding: 100px 15px;
   margin: 0 auto;
   display: flex;
-  gap: 120px;
+  align-items: baseline;
   align-content: flex-start;
 }
 
@@ -297,6 +297,7 @@ a {
   max-height: 112px;
   width: 100%;
   height: 100%;
+  margin-right: 120px;
 }
 
 .layout-footer .layout-container-social {
@@ -316,7 +317,7 @@ a {
 }
 footer .layout-social-links {
   display: flex;
-  gap: 24px;
+  gap: 16px;
 }
 
 /* #endregion LAYOUT */
@@ -574,4 +575,8 @@ footer .layout-icon {
   transform: translateY(0);
 }
 
+.theme-footer .effects-social-icon:hover,
+.theme-footer .effects-social-icon:focus {
+  background-color: var(--color-success);
+}
 /* #endregion EFFECTS*/
