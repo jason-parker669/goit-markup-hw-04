@@ -473,7 +473,7 @@ footer .layout-social-links {
 .theme-icon {
   stroke-width: 0;
   stroke: currentColor;
-  fill: none;
+  fill: var(--color-light);
 }
 
 .theme-team .theme-body-text {
@@ -543,7 +543,7 @@ footer .layout-icon {
   opacity: 1;
 }
 
-.effects-her-button {
+.effects-hero-button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -554,7 +554,7 @@ footer .layout-icon {
 
 .effects-social-icon:hover,
 .effects-social-icon:focus {
-  background-color: var(--color-success);
+  background-color: var(--color-pressed-state);
 }
 
 .effects-portfolio-card {
