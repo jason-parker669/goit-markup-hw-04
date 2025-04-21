@@ -251,29 +251,28 @@ a {
   width: calc((100% - 48px) / 3);
 }
 
+.layout-portfolio-card .layout-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.layout-overlay .layout-body-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px 32px;
+  transform: translateY(100%);
+}
+
 .layout-portfolio-card .layout-image {
   width: 100%;
   height: var(--image-height-portfolio);
 }
 
-.layout-portfolio-card {
+.layout-container-image {
   position: relative;
   overflow: hidden;
-}
-
-.layout-portfolio-card .overlay {
-  position: absolute;
-  height: var(--image-height-portfolio);
-  width: 100%;
-  color: var(--color-light);
-  background-color: var(--color-primary-brand);
-  padding: 40px 32px 0 32px;
-  top: 0;
-  left: 0;
-  transform: translateY(-100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .layout-portfolio .layout-image-subscript {
@@ -481,6 +480,14 @@ footer .layout-social-links {
   font-size: 16px;
 }
 
+.layout-overlay .theme-body-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(var(--color-light));
+  background-color: var(--color-primary-brand);
+}
+
 .theme-small-heading {
   color: var(--color-dark);
   font-size: 20px;
@@ -571,12 +578,16 @@ footer .layout-icon {
   cursor: pointer;
 }
 
-.effects-portfolio-card:hover .overlay {
-  transform: translateY(0);
-}
-
 .theme-footer .effects-social-icon:hover,
 .theme-footer .effects-social-icon:focus {
   background-color: var(--color-success);
+}
+
+.effects-card-cover {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.effects-portfolio-card:hover .effects-card-cover {
+  transform: translateY(0%);
 }
 /* #endregion EFFECTS*/
